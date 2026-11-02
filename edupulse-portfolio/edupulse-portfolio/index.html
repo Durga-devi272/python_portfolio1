@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advanced Python Programming Portfolio — EduPulse</title>
+<meta name="description" content="Advanced Python Programming portfolio featuring EduPulse, a personalized e-learning platform with AI-based quiz generation and learning resource recommendations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="brand" aria-label="Home"><span class="brand-mark">Py</span><span>Durgadevi</span></a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="#home" data-s="home">Home</a>
+      <a href="#about" data-s="about">About</a>
+      <a href="#activities" data-s="activities">Activities</a>
+      <a href="#edupulse" data-s="edupulse">EduPulse Project</a>
+      <a href="#documentation" data-s="documentation">Documentation</a>
+      <a href="#references" data-s="references">References</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Integrated M.Tech · Computer Science and Engineering</span>
+      <h1>ADVANCED PYTHON PROGRAMMING <span class="grad">PORTFOLIO</span></h1>
+      <p class="lead">A showcase of my learning journey, practical activities, technical explorations and project development.</p>
+      <p>This portfolio brings together nine course activities and my main project, <strong>EduPulse</strong> — a personalized e-learning platform built with Python, FastAPI and AI-assisted quiz generation.</p>
+      <div class="cta">
+        <a class="btn primary" href="#activities">Explore Portfolio</a>
+        <a class="btn ghost" href="#edupulse">View Main Project</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orbit o1"></div><div class="orbit o2"></div>
+      <div class="code-card glass">
+        <div class="dots"><i></i><i></i><i></i></div>
+<pre><span class="k">from</span> fastapi <span class="k">import</span> FastAPI
+
+app = FastAPI()
+
+<span class="d">@app.get</span>(<span class="s">"/learn"</span>)
+<span class="k">def</span> <span class="f">edupulse</span>():
+    <span class="k">return</span> {<span class="s">"study"</span>: <span class="k">True</span>,
+            <span class="s">"practise"</span>: <span class="k">True</span>,
+            <span class="s">"improve"</span>: <span class="k">True</span>}</pre>
+      </div>
+      <div class="chip glass c1">Quiz</div>
+      <div class="chip glass c2">API</div>
+      <div class="chip glass c3">IoT</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <header class="sec-h reveal"><span class="eyebrow">About Me</span><h2>A student developer learning by building</h2></header>
+    <div class="about-grid">
+      <div class="reveal">
+        <p>I am an Integrated M.Tech Computer Science and Engineering student. This portfolio documents my work in Advanced Python Programming, from classroom activities and creative explorations to a complete web application project.</p>
+        <p>I enjoy turning ideas into working software and learning how different tools and services fit together in a practical application.</p>
+      </div>
+      <ul class="interests reveal">
+        <li>Python programming</li>
+        <li>Web application development</li>
+        <li>Artificial intelligence integration</li>
+        <li>API development and integration</li>
+        <li>IoT-based applications</li>
+        <li>Interactive learning platforms</li>
+        <li>Practical software development</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section class="sec tint" id="activities">
+  <div class="wrap">
+    <header class="sec-h reveal"><span class="eyebrow">Portfolio Activities</span><h2>Nine activities, with evidence</h2><p class="sub">Select any evidence image to view it in full size.</p></header>
+
+    <div class="grid acts">
+
+      <!-- 1 -->
+      <article class="card act wide reveal">
+        <div class="act-media"><figure class="ph"><img src="assets/storyboard/storyboard.jpg" alt="Ten-panel storyboard titled Bangtan Kitchen Scheduler, showing a BTS-themed kitchen explaining OS scheduling and multithreading" loading="lazy" data-lb><figcaption class="ph-note">assets/storyboard/storyboard.jpg</figcaption></figure></div>
+        <div class="act-body">
+          <span class="num">01</span><span class="tag">Creative Storyboard</span>
+          <h3>Storyboard — Smart Kitchen Scheduler</h3>
+          <p>Created a visual storyboard illustrating a Smart Kitchen Scheduler concept using operating system scheduling and multithreading ideas, presented through a BTS-inspired creative theme.</p>
+          <ul class="mini">
+            <li>Head Chef as the main program; assistant chefs as threads</li>
+            <li>One stove as the single CPU</li>
+            <li>Kitchen Manager as the OS scheduler, deciding by priority</li>
+            <li>Chefs take turns, showing interleaved execution</li>
+          </ul>
+          <button class="btn small" data-open>View Evidence</button>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card act reveal">
+        <figure class="ph tall"><img src="assets/activities/python-tutorial.jpg" alt="Computer lab where students and a faculty member discuss during a Python tutorial session" loading="lazy" data-lb><figcaption class="ph-note">assets/activities/python-tutorial.jpg</figcaption></figure>
+        <div class="act-body">
+          <span class="num">02</span><span class="tag">Classroom Evidence</span>
+          <h3>Python Tutorial Discussion</h3>
+          <p>Participated in a Python tutorial discussion, collaborating with peers and discussing programming concepts during the practical session.</p>
+          <button class="btn small" data-open>View Evidence</button>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card act wide reveal" id="iot">
+        <figure class="ph tall"><img src="assets/activities/iot-notebook.jpg" alt="Handwritten notebook page: IoT Based Stuttering Assessment with hardware, software, IoT layer and system flow" loading="lazy" data-lb><figcaption class="ph-note">assets/activities/iot-notebook.jpg</figcaption></figure>
+        <div class="act-body">
+          <span class="num">03</span><span class="tag">IoT Concept</span>
+          <h3>IoT-Based Stuttering Assessment</h3>
+          <p>Designed an IoT-based conceptual assessment system for analysing speech-fluency patterns using audio capture, preprocessing, speech-feature extraction and mobile feedback.</p>
+          <p class="note">My selected impairment topic. This is an assessment-support concept, not a medical diagnostic system.</p>
+          <div class="hs">
+            <div><h4>Hardware</h4><ul><li>Microphone / audio input</li><li>ESP32 or smartphone-based audio capture</li><li>Wi-Fi / BLE communication</li></ul></div>
+            <div><h4>Software</h4><ul><li>Python speech processing</li><li>Audio preprocessing</li><li>Speech feature extraction</li><li>Fluency-event analysis</li><li>Mobile dashboard</li></ul></div>
+          </div>
+          <details class="flow">
+            <summary>System flow (9 steps)</summary>
+            <ol>
+              <li>User speaks a short reading or conversation sample</li>
+              <li>Microphone captures speech audio</li>
+              <li>Audio preprocessing: noise reduction and segmentation</li>
+              <li>Speech features extracted: pauses, repetitions, prolongations</li>
+              <li>Fluency-event analysis</li>
+              <li>Stuttering indicators and speech-fluency summary generated</li>
+              <li>Data transferred through Wi-Fi / BLE</li>
+              <li>Mobile app / dashboard displays the information</li>
+              <li>Progress tracking and feedback</li>
+            </ol>
+          </details>
+          <button class="btn small" data-open>View Notebook</button>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card act reveal">
+        <figure class="ph"><img src="assets/activities/class-quiz.jpg" alt="Students gathered around a projected interactive quiz on a classroom wall, answering on their phones" loading="lazy" data-lb><figcaption class="ph-note">assets/activities/class-quiz.jpg</figcaption></figure>
+        <div class="act-body">
+          <span class="num">04</span><span class="tag">Classroom Evidence</span>
+          <h3>Class Quiz</h3>
+          <p>Participated in a classroom quiz activity, answering questions through the projected interactive quiz platform.</p>
+          <button class="btn small" data-open>View Evidence</button>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card link-card blog reveal">
+        <span class="num">05</span>
+        <span class="platform">Medium</span>
+        <h3>“I Didn’t Understand the Code, But Somehow I Built the Project.”</h3>
+        <p>The funny, confusing and slightly stressful journey of being a student developer.</p>
+        <a class="btn primary small" href="https://medium.com/@durgamohan2715/i-didnt-understand-the-code-but-somehow-i-built-the-project-f9b7f0d90e65" target="_blank" rel="noopener noreferrer">Read Blog ↗</a>
+      </article>
+
+      <!-- 6 -->
+      <article class="card link-card reveal">
+        <span class="num">06</span>
+        <span class="platform">Google Drive</span>
+        <h3>Audio Recording Website — Business Thesis</h3>
+        <p>Business thesis document for the audio recording website.</p>
+        <a class="btn primary small" href="https://drive.google.com/file/d/1K1VZAQjhpbLAU2XdNlDr-upDcgqBQreq/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Open Thesis ↗</a>
+      </article>
+
+      <!-- 7 -->
+      <article class="card link-card reveal">
+        <span class="num">07</span>
+        <span class="platform">Google Slides</span>
+        <h3>Website Presentation</h3>
+        <p>Slide presentation for the website project.</p>
+        <a class="btn primary small" href="https://docs.google.com/presentation/d/1mM0T3Ti6eQJ5dUOgXa4MRH7twqTo1b3V/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View Presentation ↗</a>
+      </article>
+
+      <!-- 8 -->
+      <article class="card link-card video reveal">
+        <span class="num">08</span>
+        <div class="video-vis" aria-hidden="true"><span class="play">▶</span><span class="bar"><i></i></span></div>
+        <span class="platform">Google Drive · Video</span>
+        <h3>Website Demonstration Video</h3>
+        <p>A recorded walkthrough of the website. Opens in Google Drive.</p>
+        <a class="btn primary small" href="https://drive.google.com/file/d/1a4Y36PITm1Wal6DBaBKEGIHlr_bLWYRj/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Watch Demo ↗</a>
+      </article>
+
+      <!-- 9 -->
+      <article class="card act wide reveal">
+        <figure class="ph"><img src="assets/activities/padlet.png" alt="Padlet board titled Object Oriented Python Question Sets, Created by Students, with Easy, Medium and Hard question lists" loading="lazy" data-lb><figcaption class="ph-note">assets/activities/padlet.png</figcaption></figure>
+        <div class="act-body">
+          <span class="num">09</span><span class="tag">Padlet Discussion</span>
+          <h3>Object Oriented Python Question Sets – Created by Students</h3>
+          <p>Contributed to the Padlet discussion by sharing an Object-Oriented Python question set, categorised by difficulty level.</p>
+          <div class="levels">
+            <div class="lvl easy"><b>Easy</b><span>Happy Number</span><span>Length of Last Word</span></div>
+            <div class="lvl med"><b>Medium</b><span>Course Schedule</span><span>My Calendar I</span></div>
+            <div class="lvl hard"><b>Hard</b><span>Sudoku Solver</span><span>Word Ladder</span></div>
+          </div>
+          <button class="btn small" data-open>View Evidence</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUPULSE -->
+<section class="sec" id="edupulse">
+  <div class="wrap">
+    <header class="sec-h reveal"><span class="eyebrow">Main Project</span><h2>EduPulse</h2><p class="sub big">A Personalized E-Learning Platform with AI-Based Quiz Generation and Learning Resource Recommendations</p></header>
+
+    <div class="feature-banner glass reveal">
+      <p><strong>Project overview.</strong> EduPulse is a personalized e-learning platform that combines learning materials, educational videos, quizzes, assessments, performance analysis and personalized learning recommendations. It helps students understand their learning progress, identify weak topics and access suitable learning resources for improvement.</p>
+    </div>
+
+    <div class="grid three">
+      <details class="card exp reveal" open>
+        <summary><span class="ic">✦</span> Motivation</summary>
+        <p>The main motivation behind EduPulse is to make online learning more personalized and effective. Students may understand some topics well but struggle with others.</p>
+        <p>Traditional e-learning platforms may provide learning materials and assessments separately, so students often need additional effort to identify weak topics and find suitable resources. EduPulse combines these activities in one platform so students can study, practise, analyse their performance and receive recommendations.</p>
+      </details>
+      <details class="card exp reveal" open>
+        <summary><span class="ic">◇</span> Existing Gap</summary>
+        <ul>
+          <li>Learning materials and assessments are often provided separately.</li>
+          <li>Students may not receive clear information about weak topics.</li>
+          <li>Finding resources based on individual quiz performance can be difficult.</li>
+          <li>Students may manually search for additional explanations and practice materials.</li>
+          <li>General resources may not address individual learning requirements.</li>
+        </ul>
+      </details>
+      <details class="card exp reveal" open>
+        <summary><span class="ic">★</span> Proposed Solution &amp; USP</summary>
+        <p>EduPulse connects learning and performance analysis in one platform, forming a continuous cycle: <b>study → practise → identify weak topics → receive recommendations → improve.</b></p>
+      </details>
+    </div>
+
+    <h3 class="sub-h reveal">Seven core capabilities</h3>
+    <div class="grid feats">
+      <div class="card feat reveal"><b>01</b><h4>Topic-wise quizzes</h4><p>Quizzes with different difficulty levels.</p></div>
+      <div class="card feat reveal"><b>02</b><h4>AI quiz generation</h4><p>Question generation using Google Gemini.</p></div>
+      <div class="card feat reveal"><b>03</b><h4>Verified fallback</h4><p>Verified question bank when Gemini is unavailable or generated questions fail validation.</p></div>
+      <div class="card feat reveal"><b>04</b><h4>Performance analysis</h4><p>Topic-wise analysis of quiz results.</p></div>
+      <div class="card feat reveal"><b>05</b><h4>Video retrieval</h4><p>Educational videos through the YouTube Data API.</p></div>
+      <div class="card feat reveal"><b>06</b><h4>Personalized resources</h4><p>StudyCompass partner API, mainly based on quiz scores and learning progress.</p></div>
+      <div class="card feat reveal"><b>07</b><h4>Continuous learning cycle</h4><p>Study, practise, identify weak topics, receive recommendations and improve.</p></div>
+    </div>
+
+    <!-- ARCHITECTURE -->
+    <div id="architecture" class="block">
+      <header class="sec-h reveal"><span class="eyebrow">Project Architecture</span><h3 class="h2like">Client-server architecture with an external recommendation service</h3></header>
+      <div class="arch reveal">
+        <div class="a-col">
+          <div class="a-box student">Student<small>Web browser</small></div>
+          <div class="a-arrow">↓</div>
+          <div class="a-box">Frontend<small>HTML, CSS, JavaScript, Jinja2 and Chart.js</small></div>
+          <div class="a-arrow">↓</div>
+          <div class="a-box strong">FastAPI Backend<small>Authentication, course management, quiz generation, evaluation and recommendations</small></div>
+          <div class="a-arrow">↓</div>
+          <div class="a-box">SQLite Database using SQLAlchemy<small>Users, courses, questions, assessments and results</small></div>
+        </div>
+        <div class="a-ext">
+          <div class="a-label">External API integrations</div>
+          <div class="a-box ext">Google Gemini API<small>AI-based quiz generation</small></div>
+          <div class="a-box ext">YouTube Data API v3<small>Educational video retrieval</small></div>
+          <div class="a-box ext partner">StudyCompass Partner API<small>Personalized learning-resource recommendations (external service)</small></div>
+        </div>
+      </div>
+      <ol class="steps reveal">
+        <li>Students interact with the frontend through a web browser.</li>
+        <li>The frontend sends requests to the FastAPI backend.</li>
+        <li>The backend processes requests and communicates with the SQLite database.</li>
+        <li>Gemini generates quiz questions when available.</li>
+        <li>The verified question bank acts as a fallback.</li>
+        <li>YouTube API retrieves educational videos based on course and topic.</li>
+        <li>The backend sends student learning information to StudyCompass through a REST API.</li>
+        <li>Returned recommendations are displayed on the EduPulse frontend.</li>
+      </ol>
+      <p class="note-p">The architecture diagram from the project write-up can be added in the Documentation section (<a href="#documentation">see below</a>).</p>
+    </div>
+
+    <!-- TECH STACK -->
+    <div id="stack" class="block">
+      <header class="sec-h reveal"><span class="eyebrow">Technology Stack</span><h3 class="h2like">Tools behind EduPulse</h3></header>
+      <div class="grid stack">
+        <div class="card tech reveal"><small>Frontend</small><h4>HTML</h4><p>Webpage structure</p></div>
+        <div class="card tech reveal"><small>Frontend</small><h4>CSS</h4><p>Styling and layout</p></div>
+        <div class="card tech reveal"><small>Frontend</small><h4>JavaScript</h4><p>Interactivity and API communication</p></div>
+        <div class="card tech reveal"><small>Template engine</small><h4>Jinja2</h4><p>Dynamic HTML rendering</p></div>
+        <div class="card tech reveal"><small>Data visualization</small><h4>Chart.js</h4><p>Performance charts</p></div>
+        <div class="card tech reveal"><small>Backend</small><h4>Python</h4><p>Application logic</p></div>
+        <div class="card tech reveal"><small>Backend framework</small><h4>FastAPI</h4><p>REST API development</p></div>
+        <div class="card tech reveal"><small>ORM</small><h4>SQLAlchemy</h4><p>Database operations</p></div>
+        <div class="card tech reveal"><small>Database</small><h4>SQLite</h4><p>Application data storage</p></div>
+        <div class="card tech reveal"><small>AI integration</small><h4>Google Gemini API</h4><p>Quiz generation (Gemini 1.5 Flash in quiz generator code)</p></div>
+        <div class="card tech reveal"><small>Video integration</small><h4>YouTube Data API v3</h4><p>Educational videos</p></div>
+        <div class="card tech reveal"><small>Partner integration</small><h4>StudyCompass REST API</h4><p>Learning recommendations</p></div>
+        <div class="card tech reveal"><small>Data validation</small><h4>Pydantic</h4><p>Request and response validation</p></div>
+        <div class="card tech reveal"><small>Deployment</small><h4>Render</h4><p>Hosting</p></div>
+        <div class="card tech reveal"><small>Version control</small><h4>Git and GitHub</h4><p>Source-code management</p></div>
+      </div>
+    </div>
+
+    <!-- DATASETS -->
+    <div id="datasets" class="block">
+      <header class="sec-h reveal"><span class="eyebrow">Datasets Used</span><h3 class="h2like">Structured content, not a trained model</h3></header>
+      <div class="feature-banner glass reveal"><p>EduPulse does not depend on a separate large machine-learning training dataset for its main functionality. It uses structured course content and built-in educational resources. Gemini is accessed through its API, and StudyCompass is an external recommendation service.</p></div>
+      <div class="grid three">
+        <div class="card feat reveal"><b>1</b><h4>Course and lesson data</h4><p>Course names, modules, topics and learning materials.</p></div>
+        <div class="card feat reveal"><b>2</b><h4>Verified question bank</h4><p>Built-in verified multiple-choice questions organised by topic and difficulty.</p></div>
+        <div class="card feat reveal"><b>3</b><h4>Overall assessment question bank</h4><p>Predefined course-related questions.</p></div>
+        <div class="card feat reveal"><b>4</b><h4>Curated video catalogue</h4><p>Educational video information, including titles, channels and key concepts.</p></div>
+        <div class="card feat reveal"><b>5</b><h4>YouTube Data API results</h4><p>Dynamically retrieved video information.</p></div>
+        <div class="card feat reveal"><b>6</b><h4>Student performance data</h4><p>Quiz scores, assessment percentages, completed lessons and learning progress stored in the database.</p></div>
+      </div>
+    </div>
+
+    <!-- API -->
+    <div id="api" class="block">
+      <header class="sec-h reveal"><span class="eyebrow">API Integration</span><h3 class="h2like">Three services, three roles</h3></header>
+      <div class="grid three">
+        <article class="card api reveal">
+          <h4>A. Google Gemini API</h4>
+          <p class="purpose">AI-based quiz question generation · <b>HTTP POST</b></p>
+          <h5>Input</h5><ul><li>Course title</li><li>Selected topic</li><li>Difficulty level</li><li>Number of questions</li></ul>
+          <h5>Output</h5><ul><li>Quiz title</li><li>Questions</li><li>Four options</li><li>Correct answers</li><li>Explanations</li></ul>
+          <h5>Fallback</h5><p>The built-in verified question bank is used if Gemini is unavailable, the API key is missing or the generated response fails validation.</p>
+        </article>
+        <article class="card api reveal">
+          <h4>B. YouTube Data API v3</h4>
+          <p class="purpose">Fetching educational videos</p>
+          <h5>Input</h5><ul><li>Course name</li><li>Topic</li></ul>
+          <h5>Output</h5><ul><li>Video title</li><li>Video URL</li><li>Thumbnail</li><li>Channel name</li><li>Other available information</li></ul>
+          <h5>Additional mechanism</h5><p>EduPulse also maintains a curated educational-video catalogue and uses trusted educational-channel information in its selection logic.</p>
+        </article>
+        <article class="card api partner reveal">
+          <h4>C. StudyCompass Partner API</h4>
+          <p class="purpose">Personalized learning-resource recommendations · <b>HTTP POST · JSON</b></p>
+          <p class="ext-note">External partner recommendation website, not an EduPulse module.</p>
+          <h5>Partner endpoint</h5>
+          <p><code class="endpoint">https://context-course-recommender.onrender.com/api/recommendations</code></p>
+          <h5>Information sent</h5>
+          <ul><li>Course</li><li>Topic</li><li>Difficulty</li><li>Assessment score</li><li>Completed lessons</li><li>Learning progress</li><li>Preferred resource type</li><li>Top N recommendations</li></ul>
+          <h5>Fallback</h5><p>If the service is unavailable, EduPulse attempts to provide resources through its own educational-video service.</p>
+        </article>
+      </div>
+
+      <h3 class="sub-h reveal">StudyCompass API flow</h3>
+      <div class="flow-h reveal">
+        <div class="f-step"><b>1</b>Student completes a quiz or assessment</div>
+        <div class="f-step"><b>2</b>EduPulse identifies performance and topic score</div>
+        <div class="f-step"><b>3</b>Student clicks <em>Get Recommendations</em></div>
+        <div class="f-step"><b>4</b>EduPulse sends learning information to StudyCompass (REST API)</div>
+        <div class="f-step ext"><b>5</b>StudyCompass processes the information</div>
+        <div class="f-step ext"><b>6</b>StudyCompass returns relevant learning resources</div>
+        <div class="f-step"><b>7</b>EduPulse displays the recommendations</div>
+      </div>
+    </div>
+
+    <!-- IO -->
+    <div id="io" class="block">
+      <header class="sec-h reveal"><span class="eyebrow">Users, Inputs and Outputs</span><h3 class="h2like">What students do, and what they get</h3></header>
+      <div class="feature-banner glass reveal">
+        <p><strong>Primary user: the student.</strong> Students can log in, access courses, study lessons, watch educational videos, maintain notes, take topic-wise quizzes and overall assessments, view scores and performance, identify weak topics, request personalized recommendations and improve their understanding.</p>
+      </div>
+      <div class="io-grid">
+        <div class="table-card reveal">
+          <h4>Inputs</h4>
+          <div class="tw"><table>
+            <thead><tr><th>Input</th><th>Type / Format</th><th>Purpose</th></tr></thead>
+            <tbody>
+              <tr><td>Login credentials</td><td>Text</td><td>Authentication</td></tr>
+              <tr><td>Course selection</td><td>Course ID / text</td><td>Select course</td></tr>
+              <tr><td>Topic selection</td><td>Text</td><td>Select topic</td></tr>
+              <tr><td>Difficulty</td><td>Easy, Medium, Hard</td><td>Quiz difficulty</td></tr>
+              <tr><td>Quiz answers</td><td>A/B/C/D</td><td>Evaluate knowledge</td></tr>
+              <tr><td>Assessment answers</td><td>Multiple-choice values</td><td>Calculate performance</td></tr>
+              <tr><td>Learning progress</td><td>Numeric or structured data</td><td>Track activity</td></tr>
+              <tr><td>Quiz score</td><td>Numeric / percentage</td><td>Identify weak topics</td></tr>
+              <tr><td>Recommendation request</td><td>JSON</td><td>Request resources</td></tr>
+              <tr><td>Video search information</td><td>Course/topic text</td><td>Retrieve videos</td></tr>
+            </tbody></table></div>
+        </div>
+        <div class="table-card reveal">
+          <h4>Outputs</h4>
+          <div class="tw"><table>
+            <thead><tr><th>Output</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td>Course dashboard</td><td>Available courses and content</td></tr>
+              <tr><td>Educational videos</td><td>Relevant videos</td></tr>
+              <tr><td>Topic-wise quiz</td><td>Generated or verified questions</td></tr>
+              <tr><td>Assessment result</td><td>Score, percentage and pass status</td></tr>
+              <tr><td>Skill-gap analysis</td><td>Topics requiring improvement</td></tr>
+              <tr><td>Performance visualization</td><td>Charts and indicators</td></tr>
+              <tr><td>Personalized recommendations</td><td>Resources returned by StudyCompass</td></tr>
+              <tr><td>Learning progress</td><td>Progress and improvement areas</td></tr>
+            </tbody></table></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORKFLOW -->
+    <div id="workflow" class="block">
+      <header class="sec-h reveal"><span class="eyebrow">System Workflow</span><h3 class="h2like">From login to improvement</h3></header>
+      <ol class="wf reveal">
+        <li><b>1</b>Student Login</li>
+        <li><b>2</b>Select Course and Study Lessons</li>
+        <li><b>3</b>Watch Videos and Maintain Notes</li>
+        <li><b>4</b>Take Topic-wise Quizzes and Overall Assessment</li>
+        <li><b>5</b>Calculate Scores and Analyse Performance</li>
+        <li><b>6</b>Identify Weak Topics</li>
+        <li><b>7</b>Click Get Recommendations</li>
+        <li><b>8</b>Receive Learning Resources from StudyCompass</li>
+        <li><b>9</b>Practise Again and Improve Performance</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTATION -->
+<section class="sec tint" id="documentation">
+  <div class="wrap">
+    <header class="sec-h reveal"><span class="eyebrow">Project Documentation</span><h2>EduPulse write-up and architecture</h2></header>
+    <div class="doc-grid">
+      <article class="card doc reveal" id="pdfCard">
+        <h3>Project Write-up (PDF)</h3>
+        <p>The EduPulse project write-up is the primary documentation for this project.</p>
+        <div class="doc-preview" id="pdfBox">
+          <iframe id="pdfFrame" title="EduPulse project write-up preview" data-src="assets/documents/edupulse-writeup.pdf#view=FitH" hidden></iframe>
+          <div class="doc-fallback" id="pdfFallback" hidden>
+            <p><strong>Write-up preview is not available right now.</strong></p>
+            <p>The PDF will appear here once it is added to the website.</p>
+          </div>
+        </div>
+        <a class="btn primary small doc-btn" id="pdfBtn" href="assets/documents/edupulse-writeup.pdf" target="_blank" rel="noopener">Open PDF ↗</a>
+      </article>
+      <article class="card doc reveal">
+        <h3>Architecture Diagram</h3>
+        <p>EduPulse system architecture: student, frontend, FastAPI backend, SQLite database and the StudyCompass partner API.</p>
+        <div class="doc-preview">
+          <img src="assets/project/architecture.png" alt="EduPulse System Architecture diagram showing the student, EduPulse frontend, FastAPI backend, SQLite database and StudyCompass" loading="lazy">
+        </div>
+        <a class="btn primary small doc-btn" href="assets/project/architecture.png" target="_blank" rel="noopener">View Full Diagram ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCES -->
+<section class="sec" id="references">
+  <div class="wrap">
+    <header class="sec-h reveal"><span class="eyebrow">Research References</span><h2>Literature that informed the project</h2></header>
+    <ol class="refs reveal">
+      <li>G. Kurdi, J. Leo, B. Parsia, U. Sattler, and S. Al-Emari, “A systematic review of automatic question generation for educational purposes,” <i>International Journal of Artificial Intelligence in Education</i>, vol. 30, pp. 121–204, 2020. <a href="https://doi.org/10.1007/s40593-019-00186-y" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s40593-019-00186-y</a></li>
+      <li>N. Mulla and P. Gharpure, “Automatic question generation: A review of methodologies, datasets, evaluation metrics, and applications,” <i>Progress in Artificial Intelligence</i>, vol. 12, 2023. <a href="https://doi.org/10.1007/s13748-023-00295-9" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s13748-023-00295-9</a></li>
+      <li>S. Elkins, E. Kochmar, J. C. K. Cheung, and I. Serban, “How teachers can use large language models and Bloom’s taxonomy to create educational quizzes,” <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>, vol. 38, no. 21, pp. 23084–23091, 2024. <a href="https://doi.org/10.1609/aaai.v38i21.30353" target="_blank" rel="noopener noreferrer">https://doi.org/10.1609/aaai.v38i21.30353</a></li>
+      <li>S. Bulathwela, H. Muse, and E. Yilmaz, “Scalable educational question generation with pre-trained language models,” <i>Proceedings of the 24th International Conference on Artificial Intelligence in Education</i>, 2023. <a href="https://doi.org/10.1007/978-3-031-36272-9_27" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/978-3-031-36272-9_27</a></li>
+      <li>H. Butmeh and A. A. Abu-Issa, “Hybrid attribute-based recommender system for personalized e-learning with emphasis on cold start problem,” <i>Frontiers in Computer Science</i>, vol. 6, 2024. <a href="https://doi.org/10.3389/fcomp.2024.1404391" target="_blank" rel="noopener noreferrer">https://doi.org/10.3389/fcomp.2024.1404391</a></li>
+      <li>“A comprehensive study on personalized learning recommendation in e-learning system,” <i>IEEE Access</i>, vol. 12, pp. 100446–100482, 2024. <a href="https://doi.org/10.1109/ACCESS.2024.3428419" target="_blank" rel="noopener noreferrer">https://doi.org/10.1109/ACCESS.2024.3428419</a></li>
+      <li>S. Maity, A. Deroy, and S. Sarkar, “Can large language models meet the challenge of generating school-level questions?” <i>Computers and Education: Artificial Intelligence</i>, vol. 8, 2025. <a href="https://doi.org/10.1016/j.caeai.2025.100370" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.caeai.2025.100370</a></li>
+      <li>R. Schmucker, J. Wang, S. Hu, and T. M. Mitchell, “Assessing the performance of online students—New data, new approaches, improved accuracy,” <i>Journal of Educational Data Mining</i>, 2022. <a href="https://doi.org/10.5281/zenodo.6450190" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.6450190</a></li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <h3>Advanced Python Programming Portfolio</h3>
+      <p>EduPulse – A Personalized E-Learning Platform with AI-Based Quiz Generation and Learning Resource Recommendations</p>
+      <p class="close">Thank you for visiting. Every project here began as something I didn’t yet know how to build.</p>
+    </div>
+    <nav aria-label="Footer">
+      <h4>Quick links</h4>
+      <a href="#home">Home</a><a href="#about">About</a><a href="#activities">Activities</a><a href="#edupulse">EduPulse Project</a><a href="#documentation">Documentation</a><a href="#references">References</a>
+    </nav>
+  </div>
+  <div class="wrap copy">© 2026 Advanced Python Programming Portfolio</div>
+</footer>
+
+<button class="top" id="top" aria-label="Back to top">↑</button>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+  <button class="lb-x" id="lbx" aria-label="Close preview">×</button>
+  <img id="lbimg" alt="">
+  <p id="lbcap"></p>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
